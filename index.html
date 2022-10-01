@@ -1,126 +1,3888 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/imgs/icon.jpg">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <title>صيانة عامة</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <!--<!
+  [endif]--><head>
+    <!-- Basic Page Needs -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+    <link rel="icon" href="https://www.weprofix.com/images/favicon.png" />
+
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googleadservices.com/pagead/conversion_async.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script
+      src="https://www.weprofix.com/js/jquery-3.3.1.js"
+      type="text/javascript"
+    ></script>
+    <script type="module">
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("https://www.weprofix.com/js/sw.js")
+            .then((req) => console.log("service Worker :Registered"))
+            .catch((err) => console.log("service Worker :Error:${err}"));
+        });
+      }
+    </script>
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/js/jquery.min.js"
+    ></script>
+    <link
+      href="https://www.weprofix.com/css/bootstrap.min_rtl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.weprofix.com/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.weprofix.com/css/pex-theme_rtl.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.weprofix.com/css/mega-menu/mega_menu_rtl.css"
+      rel="stylesheet"
+    />
+    <link href="https://www.weprofix.com/css/flaticon.css" rel="stylesheet" />
+    <link
+      href="https://www.weprofix.com/css/owl-carousel/owl.carousel.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.weprofix.com/revolution/css/settings.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://www.weprofix.com/css/fontsgoogleapis.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.weprofix.com/css/general_rtl.css"
+      rel="stylesheet"
+    />
+    <link href="https://www.weprofix.com/css/style_rtl.css" rel="stylesheet" />
+    <meta
+      http-equiv="origin-trial"
+      content="A7bG5hJ4XpMV5a3V1wwAR0PalkFSxLOZeL9D/YBYdupYUIgUgGhfVJ1zBFOqGybb7gRhswfJ+AmO7S2rNK2IOwkAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+    <script
+      type="text/javascript"
+      async=""
+      src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1000148748/?random=1664615091914&amp;cv=9&amp;fst=1664615091914&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=4&amp;u_tz=180&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2oa9s0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.weprofix.com%2F&amp;auid=12516255.1664081781&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"
+    ></script>
   </head>
-  <body>
-    <section class="header">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid container1">
-          <!-- Links -->
-          
-          <ul class="navbar-nav text-right">
-            <li class="nav-item rtl">
-              <i class="fa fa-clock-o text-white"></i>
-              <a class="nav-link " href="#">السبت-الخميس 8:30-22:30</a>
-            </li>
-            <li class="nav-item">
-              
-                <i class="fa fa-envelope-o text-white"></i>
-                <a class="nav-link" href="mailto:info@weprofix.com">info@weprofix.com</a>
-              
-            </li>
-          </ul>
-               <div class ="col-lg-4 col-md-4 col-sm-4">
-                    <div class="dropdown">
-                      <button class="dropbtn">الأردن
-                        <i class="fa fa-angle-down fa-indicator"></i>
-                      </button>
-                      <div class="drop-content">
-                        <a href="#">الأردن</a>
+
+  <body
+    class="ltr-ltr"
+    data-new-gr-c-s-check-loaded="14.1080.0"
+    data-gr-ext-installed=""
+  >
+    <div id="preloader" style="display: none">
+      <div class="clear-loading loading-effect">
+        <span>
+          <img
+            width="200"
+            src="https://www.weprofix.com/uploads/images/setting/logo2.png"
+            alt="bw-logo"
+          />
+        </span>
+        <img
+          id="loader-img"
+          src="https://www.weprofix.com/images/loading.gif"
+          width="100"
+          alt=""
+        />
+      </div>
+    </div>
+    <header class="clean" id="header">
+      <div class="topbar dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="topbar-left text-left">
+                <ul class="list-inline ltr-ltr">
+                  <li class="rtl">
+                    <i class="fa fa-envelope-o"> </i>
+                    <a href="mailto:info@weprofix.com">info@weprofix.com</a>
+                  </li>
+                  <li class="rtl">
+                    <i class="fa fa-clock-o">
+                      <a nohref="tel:السبت - الخميس 08.30 - 20.30"> </a></i
+                    ><a nohref="tel:السبت - الخميس 08.30 - 20.30"
+                      >السبت - الخميس 08.30 - 20.30</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="dropdown">
+                <button class="dropbtn">
+                  الأردن <i class="fa fa-angle-down fa-indicator"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a
+                    href="https://www.weprofix.com/JO/4/ar/home"
+                    class="headerInnerA"
+                    >الأردن</a
+                  >
+                </div>
+              </div>
+
+              <div class="topbar-right text-right ltr">
+                <ul class="list-inline ltr-ltr">
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+96264000099" class="contact">
+                      +96264000099
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/ProfixJo/"
+                      target="_blank"
+                    >
+                      <i class="fa fa-facebook"> </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/profixjo/"
+                      target="_blank"
+                    >
+                      <i class="fa fa-instagram"> </i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCMrjtCDeu4KOqJTPPU7f1qw"
+                      target="_blank"
+                    >
+                      <i class="fa fa-youtube"> </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2">
+              <!--                    <span class="langTop">-->
+              <!--                         <a href="--><!----><!--"-->
+              <!--                            class="headerInnerA">--><!--</a>-->
+
+              <div class="dropdown">
+                <button class="dropbtn">
+                  عربي <i class="fa fa-angle-down fa-indicator"></i>
+                </button>
+
+                <div class="dropdown-content">
+                  <a
+                    href="https://www.weprofix.com/JO/4/en/home/"
+                    class="headerInnerA"
+                    >English</a
+                  >
+                  <a
+                    href="https://www.weprofix.com/JO/4/fr/home/"
+                    class="headerInnerA"
+                    >French</a
+                  >
+                </div>
+              </div>
+              <!--                    </span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu rtl">
+        <!-- menu start -->
+        <nav
+          id="menu"
+          class="mega-menu rtl desktopTopFixed"
+          style="display: block"
+        >
+          <!-- menu list items container -->
+          <section class="menu-list-items rtl">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <!-- menu logo -->
+                  <ul class="menu-logo">
+                    <li>
+                      <a href="https://www.weprofix.com/JO/4/ar/home">
+                        <img
+                          id="logo_img"
+                          src="https://www.weprofix.com/uploads/images/setting/logo2.png"
+                          alt="بروفكس"
+                          style="height: 55px"
+                        />
+                      </a>
+
+                      <div class="menu-mobile-collapse-trigger">
+                        <span></span>
+                      </div>
+                      <div class="menu-mobile-collapse-trigger">
+                        <span></span>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- menu links -->
+
+                  <ul id="bs-example-navbar-collapse">
+                    <ul
+                      class="menu-links"
+                      style="display: none; max-height: 400px; overflow: auto"
+                    >
+                      <li>
+                        <a
+                          href="https://www.weprofix.com/JO/4/ar/article/44/من-نحن"
+                          >من نحن
+                        </a>
+                      </li>
+                      <li class="hoverTrigger">
+                        <a href="javascript:void(0)"
+                          >خدمات الصيانة
+                          <i class="fa fa-angle-down fa-indicator"></i>
+                          <div class="mobileTriggerButton"></div
+                        ></a>
+                        <ul
+                          class="drop-down-multilevel left-menu effect-fade"
+                          style="transition: all 400ms ease 0s"
+                        >
+                          <li class="hoverTrigger">
+                            <a href="javascript:void(0)"
+                              >الصيانة على الطلب
+                              <i class="fa fa-angle-right fa-indicator"></i>
+                              <div class="mobileTriggerButton"></div
+                            ></a>
+                            <div
+                              class="drop-down grid-col-12 effect-fade width-3"
+                              style="transition: all 400ms ease 0s"
+                            >
+                              <!--grid row-->
+                              <div class="grid-row">
+                                <!--grid column 3-->
+                                <div class="grid-col-3">
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/84/خدمات-طارئة---أزمة-كورونا"
+                                        >خدمات طارئة - أزمة كورونا</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/85/خدمات-التعقيم"
+                                        >خدمات التعقيم</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/3/الكهرباء"
+                                        >الكهرباء</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/33/الأعمال-الصحية-و-السباكة"
+                                        >الأعمال الصحية و السباكة</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/13/التكييف"
+                                        >التكييف</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/6/التدفئة"
+                                        >التدفئة</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/10/الستالايت"
+                                        >الستالايت</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!--grid column 3-->
+                                <div class="grid-col-3">
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/11/النوافذ-والأبواب"
+                                        >النوافذ والأبواب</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/2/النجارة-والأثاث-الخشبي"
+                                        >النجارة والأثاث الخشبي</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/58/الحدادة-واللحام"
+                                        >الحدادة واللحام</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/7/أنظمة-المراقبة-و-التحكم-الذكي"
+                                        >أنظمة المراقبة و التحكم الذكي</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/79/صيانة-الاجهزة"
+                                        >صيانة الاجهزة</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/14/المعلقات-و-الجداريات"
+                                        >المعلقات و الجداريات</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/16/تقنيات-المياه-والفلاتر"
+                                        >تقنيات المياه والفلاتر</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!--grid column 3-->
+                                <div class="grid-col-3">
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/4/المصاعد"
+                                        >المصاعد</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/80/تقييم-العقار"
+                                        >تقييم العقار</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/81/العقود-السنوية"
+                                        >العقود السنوية</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/82/عروض-خاصة"
+                                        >عروض خاصة</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="hoverTrigger">
+                            <a href="javascript:void(0)"
+                              >الديكور والتجديدات
+                              <i class="fa fa-angle-right fa-indicator"></i>
+                              <div class="mobileTriggerButton"></div
+                            ></a>
+                            <div
+                              class="drop-down grid-col-12 effect-fade width-1"
+                              style="transition: all 400ms ease 0s"
+                            >
+                              <!--grid row-->
+                              <div class="grid-row">
+                                <!--grid column 3-->
+                                <div class="grid-col-12">
+                                  <ul>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/8/الدهان-ومعالجة-الأسطح"
+                                        >الدهان ومعالجة الأسطح</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/67/أعمال-العزل-و-معالجة-الرطوبة"
+                                        >أعمال العزل و معالجة الرطوبة</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/5/البلاط-والأرضيات"
+                                        >البلاط والأرضيات</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/15/المظلات-و-الكرميد"
+                                        >المظلات و الكرميد</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="https://www.weprofix.com/JO/4/ar/indservices/69/التجديدات-والديكور"
+                                        >التجديدات والديكور</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.weprofix.com/JO/4/ar/article/55/إدارة-المنشآت"
+                              >إدارة المنشآت
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.weprofix.com/JO/4/ar/all_packages/"
+                              >عقود صيانة سنوية للمنازل
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.weprofix.com/JO/4/ar/crservices/62/إدارة-المنشآت"
+                          >إدارة المنشآت
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.weprofix.com/JO/4/ar/article/50/الأكاديمية"
+                          >الأكاديمية
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.weprofix.com/JO/4/ar/article/49/التصنيف-المهني"
+                          >التصنيف المهني
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.weprofix.com/JO/4/ar/article/54/الأنظمة-والبرامج-الذكية"
+                          >الأنظمة الذكية
+                        </a>
+                      </li>
+                      <li class="marked">
+                        <a href="https://www.weprofix.com/JO/4/ar/franchises/"
+                          >حق الامتياز من بروفكس
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.weprofix.com/JO/4/ar/client/48/أهم-عملاء-بروفكس"
+                          >أهم عملاء بروفكس
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.weprofix.com/JO/4/ar/contact/"
+                          >اتصل بنا
+                        </a>
+                      </li>
+                      <li>
+                        <a nohref="" id="openCart" data-show-block="cart"
+                          ><i aria-hidden="true" class="fa fa-shopping-cart">
+                          </i
+                          ><span id="cartSize">0</span></a
+                        >
+                      </li>
+                    </ul>
+                    <i class="fa fa-angle- fa-indicator"></i>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </nav>
+        <!-- menu end -->
+      </div>
+
+      <div id="back-to-top" style="display: block">
+        <a class="top arrow" href="#top"><i class="fa fa-chevron-up"></i></a>
+      </div>
+
+      <div class="fixed-social" id="fixed-social" style="display: block">
+        <a href="tel:السبت - الخميس 08.30 - 20.30" target="_blank"
+          ><i class="fa fa-phone fa-fw"></i
+        ></a>
+        <a href="mailto:info@weprofix.com" target="_blank"
+          ><i class="fa fa-envelope fa-fw"></i
+        ></a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.technoliege.eprofix.customerapp&amp;fbclid=IwAR00mT4ohDjDLBYAdZ1XdSKAL4V5sNCXdwy5D0ULgDPrihNESh8WpqYrDcA"
+          target="_blank"
+          ><i class="fa fa-android fa-fw"></i
+        ></a>
+        <a
+          href="https://apps.apple.com/jo/app/profix-platform/id1444727906"
+          target="_blank"
+          ><i class="fa fa-apple fa-fw"></i
+        ></a>
+      </div>
+
+      <script language="javascript" type="text/javascript">
+        $(".menu-links li").each(function () {
+          if (
+            $(this).find("a").attr("href") == decodeURIComponent(document.URL)
+          ) {
+            $(this).addClass("active");
+          }
+        });
+        $(".menu-links li").each(function () {
+          if (
+            $(this).find("a").attr("href") == decodeURIComponent(document.URL)
+          ) {
+            $(this).parent().addClass("active");
+            $(this).parent().parent().addClass("active");
+            $(this).parent().parent().parent().addClass("active");
+            $(this).parent().parent().parent().parent().addClass("active");
+          }
+        });
+      </script>
+    </header>
+
+    <div class="bg-black">
+      <div
+        class="forcefullwidth_wrapper_tp_banner"
+        id="rev_slider_10_1_forcefullwidth"
+        style="
+          position: relative;
+          width: 100%;
+          height: auto;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        "
+      >
+        <div
+          id="rev_slider_10_1_wrapper"
+          class="rev_slider_wrapper fullwidthbanner-container"
+          data-alias="construction-slider6"
+          data-source="gallery"
+          style="
+            margin: 0px auto;
+            background-color: transparent;
+            padding: 0px;
+            position: absolute;
+            overflow: visible;
+            height: 665px;
+            width: 1316px;
+            left: 0px;
+          "
+        >
+          <!-- START REVOLUTION SLIDER 5.3.0.2.1 fullwidth mode -->
+
+          <div
+            id="rev_slider_10_1"
+            class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive"
+            style="
+              max-height: 970px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              height: 665px;
+            "
+            data-version="5.3.0.2.1"
+            data-slideactive="rs-34"
+          >
+            <ul
+              class="tp-revslider-mainul"
+              style="
+                visibility: visible;
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                max-height: 520px;
+              "
+            >
+              <!-- SLIDE  -->
+
+              <li
+                data-index="rs-34"
+                data-transition="fade"
+                data-slotamount="default"
+                data-hideafterloop="0"
+                data-hideslideonmobile="off"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="300"
+                data-thumb="https://www.weprofix.com/uploads/images/slider/IMG_0252.JPG"
+                data-rotate="0"
+                data-saveperformance="off"
+                data-title="Slide"
+                data-param1=""
+                data-param2=""
+                data-param3=""
+                data-param4=""
+                data-param5=""
+                data-param6=""
+                data-param7=""
+                data-param8=""
+                data-param9=""
+                data-param10=""
+                data-description=""
+                class="tp-revslider-slidesli active-revslide"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                  z-index: 20;
+                  visibility: inherit;
+                  opacity: 1;
+                  background-color: rgba(255, 255, 255, 0);
+                "
+              >
+                <!-- MAIN IMAGE -->
+
+                <div class="bg_darck"></div>
+
+                <div
+                  class="slotholder"
+                  style="
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    visibility: inherit;
+                    opacity: 1;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                  "
+                >
+                  <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="https://www.weprofix.com/uploads/images/slider/IMG_0252.JPG" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg" data-no-retina="">-->
+                  <div
+                    class="tp-bgimg defaultimg"
+                    style="
+                      background-color: rgba(0, 0, 0, 0);
+                      background-repeat: no-repeat;
+                      background-image: url('https://www.weprofix.com/uploads/images/slider/IMG_0252.JPG');
+                      background-size: cover;
+                      background-position: center center;
+                      width: 100%;
+                      height: 100%;
+                      opacity: 1;
+                      visibility: inherit;
+                      z-index: 20;
+                    "
+                    src="https://www.weprofix.com/uploads/images/slider/IMG_0252.JPG"
+                  ></div>
+                </div>
+
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 13 -->
+
+                <!-- LAYER NR. 14 -->
+
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: visible;
+                    left: 333px;
+                    top: 300px;
+                    z-index: 6;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption tp-resizeme"
+                        id="slide-34-layer-7"
+                        data-x="center"
+                        data-hoffset=""
+                        data-y="center"
+                        data-voffset="-10"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":1940,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power1.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['inherit','inherit','inherit','inherit']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="
+                          z-index: 6;
+                          white-space: nowrap;
+                          font-size: 50px;
+                          line-height: 50px;
+                          font-weight: 900;
+                          color: rgb(255, 255, 255);
+                          font-family: Roboto;
+                          visibility: inherit;
+                          transition: none 0s ease 0s;
+                          text-align: inherit;
+                          border-width: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          letter-spacing: 0px;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 1;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                          transform-origin: 50% 50% 0px;
+                        "
+                      >
+                        خدمات على الطلب، عقود سنوية
                       </div>
                     </div>
-                    <div class="topbar-right text-right ltr">
-                      <ul class="list-inline ltr-ltr">
-                        <li>
-                          <i class="fa fa-phone">
-                            <a href="tel:12345677" class="contact">123456777</a>
-                          </i>
-                        </li>
-                        <li>
-                          <a href="https:://www.facebook.com" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https:://www.instagram.com" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https:://www.youtube.com" target="_blank">
-                            <i class="fa fa-youtube"></i>
-                          </a>
-                        </li>
-                      </ul>
+                  </div>
+                </div>
+
+                <!-- LAYER NR. 15 -->
+
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: visible;
+                    left: 0px;
+                    top: 134px;
+                    z-index: 7;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption tp-resizeme"
+                        id="slide-34-layer-8"
+                        data-x="center"
+                        data-hoffset=""
+                        data-y="center"
+                        data-voffset="90"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":2650,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power1.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="
+                          z-index: 7;
+                          white-space: nowrap;
+                          font-size: 14px;
+                          line-height: 20px;
+                          font-weight: 400;
+                          color: rgb(255, 255, 255);
+                          font-family: Roboto;
+                          visibility: inherit;
+                          transition: none 0s ease 0s;
+                          text-align: center;
+                          border-width: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          letter-spacing: 0px;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 1;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                          transform-origin: 50% 50% 0px;
+                        "
+                      >
+                        <p
+                          style="
+                            transition: none 0s ease 0s;
+                            text-align: inherit;
+                            line-height: 19px;
+                            border-width: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            letter-spacing: 0px;
+                            font-weight: 400;
+                            font-size: 11px;
+                          "
+                        ></p>
+                      </div>
                     </div>
-               </div>
+                  </div>
+                </div>
 
-          </ul>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm ">
+                <!-- LAYER NR. 16 -->
 
-        <div class="container-fluid">
-          <!-- Links -->
-          <ul class="navbar-nav nav2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img src="/assets/imgs/icon.jpg" alt="Icon" class="Icon">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">من نحن</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">خدمات الصيانة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">اتصل بنا</a>
-            </li>
-          </ul>
-        </div>
-      
-      </nav>
-    </section>
-    <section class="section1">
-     <div class="container">
-        <div class="row text-center">
-          <div class="col-sm-12">
-             <div class="section-title">
-                <h1 class="text-white">Title for a website</h1>
-             </div>
-          </div>
-          <div class="col-sm-12">
-            <ul class="page-breadcrumb">
-               <li>
-                <a href="#">
-                   <i class="fa fa-home" ></i>
-                   الرئيسية
-                </a>
-               </li>
-               <li>
-                <a href="#">
-                   <i class="fa fa-angle-double-right" ></i>
-                   الرئيسية
-                </a>
-               </li>
+                <!-- LAYER NR. 17 -->
+              </li>
+
+              <li
+                data-index="rs-41"
+                data-transition="fade"
+                data-slotamount="default"
+                data-hideafterloop="0"
+                data-hideslideonmobile="off"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="300"
+                data-thumb="https://www.weprofix.com/uploads/images/slider/________%20__________.jpg"
+                data-rotate="0"
+                data-saveperformance="off"
+                data-title="Slide"
+                data-param1=""
+                data-param2=""
+                data-param3=""
+                data-param4=""
+                data-param5=""
+                data-param6=""
+                data-param7=""
+                data-param8=""
+                data-param9=""
+                data-param10=""
+                data-description=""
+                class="tp-revslider-slidesli"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                  z-index: 18;
+                  visibility: hidden;
+                  opacity: 0;
+                  background-color: rgba(255, 255, 255, 0);
+                "
+              >
+                <!-- MAIN IMAGE -->
+
+                <div class="bg_darck"></div>
+
+                <div
+                  class="slotholder"
+                  style="
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    visibility: inherit;
+                    opacity: 1;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                  "
+                >
+                  <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="https://www.weprofix.com/uploads/images/slider/________%20__________.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg" data-no-retina="">-->
+                  <div
+                    class="tp-bgimg defaultimg"
+                    style="
+                      background-color: rgba(0, 0, 0, 0);
+                      background-repeat: no-repeat;
+                      background-image: url('https://www.weprofix.com/uploads/images/slider/________%20__________.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                      width: 100%;
+                      height: 100%;
+                      opacity: 1;
+                      visibility: inherit;
+                      z-index: 20;
+                    "
+                    src="https://www.weprofix.com/uploads/images/slider/________%20__________.jpg"
+                  ></div>
+                </div>
+
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 13 -->
+
+                <!-- LAYER NR. 14 -->
+
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: hidden;
+                    left: 134px;
+                    top: 308px;
+                    z-index: 6;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption tp-resizeme"
+                        id="slide-41-layer-7"
+                        data-x="center"
+                        data-hoffset=""
+                        data-y="center"
+                        data-voffset="-10"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":1940,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power1.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['inherit','inherit','inherit','inherit']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="
+                          z-index: 6;
+                          white-space: nowrap;
+                          font-size: 51px;
+                          line-height: 51px;
+                          font-weight: 900;
+                          color: rgb(255, 255, 255);
+                          font-family: Roboto;
+                          visibility: hidden;
+                          transition: none 0s ease 0s;
+                          text-align: inherit;
+                          border-width: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          letter-spacing: 0px;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 0.0001;
+                          transform-origin: 50% 50% 0px;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                        "
+                      >
+                        مشاركة بروفكس _ برنامج خواطر _ موسم 11 _ حلقة 27
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LAYER NR. 15 -->
+
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: hidden;
+                    left: 0px;
+                    top: 143px;
+                    z-index: 7;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption tp-resizeme"
+                        id="slide-41-layer-8"
+                        data-x="center"
+                        data-hoffset=""
+                        data-y="center"
+                        data-voffset="90"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":2650,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power1.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="
+                          z-index: 7;
+                          white-space: nowrap;
+                          font-size: 14px;
+                          line-height: 20px;
+                          font-weight: 400;
+                          color: rgb(255, 255, 255);
+                          font-family: Roboto;
+                          visibility: hidden;
+                          transition: none 0s ease 0s;
+                          text-align: center;
+                          border-width: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          letter-spacing: 0px;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 0.0001;
+                          transform-origin: 50% 50% 0px;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                        "
+                      >
+                        <p
+                          style="
+                            transition: none 0s ease 0s;
+                            text-align: inherit;
+                            line-height: 20px;
+                            border-width: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            letter-spacing: 0px;
+                            font-weight: 400;
+                            font-size: 11px;
+                          "
+                        ></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LAYER NR. 16 -->
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: hidden;
+                    left: 400px;
+                    top: 458px;
+                    z-index: 8;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption button yellow animated middle-fill"
+                        id="slide-41-layer-9"
+                        data-x="center"
+                        data-hoffset="-120"
+                        data-y="center"
+                        data-voffset="200"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="button"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":3360,"speed":1000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['inherit','inherit','inherit','inherit']"
+                        data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[35,35,35,35]"
+                        data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[35,35,35,35]"
+                        style="
+                          z-index: 8;
+                          white-space: nowrap;
+                          font-size: 12px;
+                          line-height: 20px;
+                          outline: none;
+                          cursor: pointer;
+                          visibility: hidden;
+                          transition: none 0s ease 0s;
+                          text-align: inherit;
+                          border-width: 1px;
+                          margin: 7px 0px 0px;
+                          padding: 8px 25px;
+                          letter-spacing: 0px;
+                          font-weight: 500;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 0.0001;
+                          transform-origin: 50% 50% 0px;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                        "
+                      >
+                        <span>
+                          <a
+                            href="https://www.youtube.com/watch?v=Lnlgd0cU5lY"
+                            type="button"
+                            >https://www.youtube.com/watch?v=Lnlgd0cU5lY</a
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LAYER NR. 17 -->
+              </li>
+
+              <li
+                data-index="rs-29"
+                data-transition="fade"
+                data-slotamount="default"
+                data-hideafterloop="0"
+                data-hideslideonmobile="off"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="300"
+                data-thumb="https://www.weprofix.com/uploads/images/slider/____________%20____%20________%20______________%20_1_.png"
+                data-rotate="0"
+                data-saveperformance="off"
+                data-title="Slide"
+                data-param1=""
+                data-param2=""
+                data-param3=""
+                data-param4=""
+                data-param5=""
+                data-param6=""
+                data-param7=""
+                data-param8=""
+                data-param9=""
+                data-param10=""
+                data-description=""
+                class="tp-revslider-slidesli"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                  z-index: 18;
+                  visibility: hidden;
+                  opacity: 0;
+                  background-color: rgba(255, 255, 255, 0);
+                "
+              >
+                <!-- MAIN IMAGE -->
+
+                <div class="bg_darck"></div>
+
+                <div
+                  class="slotholder"
+                  style="
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    visibility: inherit;
+                    opacity: 1;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                  "
+                >
+                  <!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="https://www.weprofix.com/uploads/images/slider/____________%20____%20________%20______________%20_1_.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg" data-no-retina="">-->
+                  <div
+                    class="tp-bgimg defaultimg"
+                    style="
+                      background-color: rgba(0, 0, 0, 0);
+                      background-repeat: no-repeat;
+                      background-image: url('https://www.weprofix.com/uploads/images/slider/____________%20____%20________%20______________%20_1_.png');
+                      background-size: cover;
+                      background-position: center center;
+                      width: 100%;
+                      height: 100%;
+                      opacity: 1;
+                      visibility: inherit;
+                      z-index: 20;
+                    "
+                    src="https://www.weprofix.com/uploads/images/slider/____________%20____%20________%20______________%20_1_.png"
+                  ></div>
+                </div>
+
+                <!-- LAYERS -->
+
+                <!-- LAYER NR. 13 -->
+
+                <!-- LAYER NR. 14 -->
+
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: hidden;
+                    left: 389px;
+                    top: 308px;
+                    z-index: 6;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption tp-resizeme"
+                        id="slide-29-layer-7"
+                        data-x="center"
+                        data-hoffset=""
+                        data-y="center"
+                        data-voffset="-10"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":1940,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power1.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['inherit','inherit','inherit','inherit']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="
+                          z-index: 6;
+                          white-space: nowrap;
+                          font-size: 51px;
+                          line-height: 51px;
+                          font-weight: 900;
+                          color: rgb(255, 255, 255);
+                          font-family: Roboto;
+                          visibility: hidden;
+                          transition: none 0s ease 0s;
+                          text-align: inherit;
+                          border-width: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          letter-spacing: 0px;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 0.0001;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                          transform-origin: 50% 50% 0px;
+                        "
+                      >
+                        نصنع الفرق في عالم الصيانة
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LAYER NR. 15 -->
+
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: hidden;
+                    left: 314px;
+                    top: 376px;
+                    z-index: 7;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption tp-resizeme"
+                        id="slide-29-layer-8"
+                        data-x="center"
+                        data-hoffset=""
+                        data-y="center"
+                        data-voffset="90"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":2650,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power1.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['center','center','center','center']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="
+                          z-index: 7;
+                          white-space: nowrap;
+                          font-size: 14px;
+                          line-height: 20px;
+                          font-weight: 400;
+                          color: rgb(255, 255, 255);
+                          font-family: Roboto;
+                          visibility: hidden;
+                          transition: none 0s ease 0s;
+                          text-align: center;
+                          border-width: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          letter-spacing: 0px;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 0.0001;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                          transform-origin: 50% 50% 0px;
+                        "
+                      >
+                        <p
+                          style="
+                            transition: none 0s ease 0s;
+                            text-align: inherit;
+                            line-height: 20px;
+                            border-width: 0px;
+                            margin: 0px 0px 14px;
+                            padding: 0px;
+                            letter-spacing: 0px;
+                            font-weight: 400;
+                            font-size: 11px;
+                          "
+                        ></p>
+                        <p
+                          style="
+                            text-align: inherit;
+                            transition: none 0s ease 0s;
+                            line-height: 20px;
+                            border-width: 0px;
+                            margin: 0px 0px 14px;
+                            padding: 0px;
+                            letter-spacing: 0px;
+                            font-weight: 400;
+                            font-size: 11px;
+                          "
+                        >
+                          كانت تلك الشعلة التي أطلقت بروفكس، حيث أن مؤسس بروفكس
+                          سعى لصنع الفرق في عالم الصيانة وإدارة المنشآت
+                        </p>
+
+                        <p
+                          style="
+                            text-align: inherit;
+                            transition: none 0s ease 0s;
+                            line-height: 20px;
+                            border-width: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            letter-spacing: 0px;
+                            font-weight: 400;
+                            font-size: 11px;
+                          "
+                        >
+                          لإنهاء العبء الذي تشكله الصيانة على أصحاب المنازل
+                          والمنشآت التجارية والارتقاء بهذه المهن
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LAYER NR. 16 -->
+                <div
+                  class="tp-parallax-wrap"
+                  style="
+                    position: absolute;
+                    display: block;
+                    visibility: hidden;
+                    left: 531px;
+                    top: 458px;
+                    z-index: 8;
+                  "
+                >
+                  <div
+                    class="tp-loop-wrap"
+                    style="position: absolute; display: block"
+                  >
+                    <div
+                      class="tp-mask-wrap"
+                      style="
+                        position: absolute;
+                        display: block;
+                        overflow: visible;
+                      "
+                    >
+                      <div
+                        class="tp-caption button yellow animated middle-fill"
+                        id="slide-29-layer-9"
+                        data-x="center"
+                        data-hoffset="-120"
+                        data-y="center"
+                        data-voffset="200"
+                        data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="button"
+                        data-responsive_offset="on"
+                        data-frames='[{"delay":3360,"speed":1000,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textalign="['inherit','inherit','inherit','inherit']"
+                        data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[35,35,35,35]"
+                        data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[35,35,35,35]"
+                        style="
+                          z-index: 8;
+                          white-space: nowrap;
+                          font-size: 12px;
+                          line-height: 20px;
+                          outline: none;
+                          cursor: pointer;
+                          visibility: hidden;
+                          transition: none 0s ease 0s;
+                          text-align: inherit;
+                          border-width: 1px;
+                          margin: 7px 0px 0px;
+                          padding: 8px 25px;
+                          letter-spacing: 0px;
+                          font-weight: 500;
+                          min-height: 0px;
+                          min-width: 0px;
+                          max-height: none;
+                          max-width: none;
+                          opacity: 0.0001;
+                          transform: matrix3d(
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                          );
+                          transform-origin: 50% 50% 0px;
+                        "
+                      >
+                        <span>
+                          <a
+                            href="https://sh.whatsnewit.com/profix/JO/4/ar/article/44/%D9%85%D9%86-%D9%86%D8%AD%D9%86"
+                            type="button"
+                            >قصة بروفكس</a
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LAYER NR. 17 -->
+              </li>
             </ul>
-         </div>
+
+            <div
+              class="tp-bannertimer tp-bottom"
+              style="
+                visibility: hidden;
+                width: 70.4778%;
+                transform: translate3d(0px, 0px, 0px);
+              "
+            ></div>
+
+            <div class="tp-loader spinner3" style="display: none">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+            <div
+              class="tp-leftarrow tparrows hermes"
+              style="
+                top: 50%;
+                transform: matrix(1, 0, 0, 1, 0, -55);
+                left: 0px;
+                visibility: hidden;
+                opacity: 0;
+              "
+            >
+              <div class="tp-arr-allwrapper">
+                <div
+                  class="tp-arr-imgholder"
+                  style="
+                    background-image: url('https://www.weprofix.com/uploads/images/slider/____________%20____%20________%20______________%20_1_.png');
+                  "
+                ></div>
+                <div class="tp-arr-titleholder">Slide</div>
+              </div>
+            </div>
+            <div
+              class="tp-rightarrow tparrows hermes"
+              style="
+                top: 50%;
+                transform: matrix(1, 0, 0, 1, -30, -55);
+                left: 100%;
+                visibility: hidden;
+                opacity: 0;
+              "
+            >
+              <div class="tp-arr-allwrapper">
+                <div
+                  class="tp-arr-imgholder"
+                  style="
+                    background-image: url('https://www.weprofix.com/uploads/images/slider/________%20__________.jpg');
+                  "
+                ></div>
+                <div class="tp-arr-titleholder">Slide</div>
+              </div>
+            </div>
+          </div>
         </div>
-     </div>
+        <div
+          class="tp-fullwidth-forcer"
+          style="width: 100%; height: 665px"
+        ></div>
+      </div>
+    </div>
+    <section class="page-section-ptb pb-30 fixed pattern-4">
+      <div class="container">
+        <div class="row rtl">
+          <div class="col-sm-12 text-center">
+            <div class="section-title">
+              <h2 class="title">من خدماتنا</h2>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4"
+            data-nav-arrow="true"
+            data-items="3"
+            data-xs-items="1"
+          >
+            <div class="feature-box text">
+              <h6 class="title serviceT">
+                <label> 01.</label><span>الصيانة على الطلب</span>
+              </h6>
+              <p class="serviceP">
+                تقدم بروفكس خدمات متكاملة في أعمال الصيانة على الطلب، حيث تقوم
+                بتلبية كافة احتياجاتكم من أعمال الصيانة بمختلف مجالات العمل
+                (الكهرباء، التكييف، السباكة، النجارة .. وغيرها)، و لذلك تم إطلاق
+                تطبيق Eprofix لتسهيل طلب خدمات الصيانة
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-4"
+            data-nav-arrow="true"
+            data-items="3"
+            data-xs-items="1"
+          >
+            <div class="feature-box text">
+              <h6 class="title serviceT">
+                <label> 02.</label><span>الديكور والتجديدات</span>
+              </h6>
+              <p class="serviceP">
+                تقدم بروفكس خدمات متكاملة في أعمال التجديدات والديكور ، حيث تقوم
+                بتلبية كافة احتياجاتكم من أعمال تجديد المنازل والمكاتب بأحدث
+                الديكورات والدهانات&nbsp;بالإضافة إلى أعمال التصميم الداخلي و
+                التشطيبات. ولقد تميزت بروفكس في تقديم أعمال العزل بكافة أنواعه
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-4"
+            data-nav-arrow="true"
+            data-items="3"
+            data-xs-items="1"
+          >
+            <div class="feature-box text">
+              <h6 class="title serviceT">
+                <label> 03.</label><span>إدارة المرافق</span>
+              </h6>
+              <p class="serviceP">
+                تقدم بروفكس خدمات متكاملة في إدارة المنشآت، حيث تقوم بتلبية كافة
+                احتياجاتكم للتخلص من عبء الصيانة وتقليل الأعطال والتكاليف، و
+                تستخدم لذلك برامج تقنية خاصة بإدارة المنشأة والحفاظ عليها والتي
+                تقوم بالمحافظة على الأصول وتقليل التكاليف والجهد.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <section
+      class="dark-bg page-section-ptb bg fixed text-white gradient-overlay counter-section pb-60 rtl"
+      style="
+        background-image: url(https://www.weprofix.com/uploads/images/home_msg/home_msg2_14.jpg);
+      "
+    >
+      <div class="container">
+        <div class="section-title">
+          <h2 class="title title2">كيفية <label> طلب الخدمة </label></h2>
+        </div>
+        <div class="service-steps text-upper" data-inview-showup="showup-scale">
+          <div class="step">
+            <span class="step-number"> 1 </span>
+            <span>حمل تطبيق Eprofix</span>
+          </div>
+          <div class="step">
+            <span class="step-number"> 2 </span>
+            <span>اطلب الخدمة</span>
+          </div>
+          <div class="step">
+            <span class="step-number"> 3 </span>
+            <span>تابع طلبك من خلال التطبيق</span>
+          </div>
+          <div class="step">
+            <span class="step-number"> 4 </span>
+            <span>قم بتقييم الفني والعمل</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <div class="col-sm-12 text-center">
+          <div class="section-title">
+            <h2 class="title">حزم الصيانة</h2>
+          </div>
+        </div>
+        <div class="row cols-md rows-lg text-center">
+          <div class="md-col-12 rtl">
+            <div class="cols-md rows-lg">
+              <div class="col-md-3">
+                <div
+                  class="feature feature-side text-left showup-translate-up"
+                  data-inview-showup="showup-translate-up"
+                >
+                  <div class="feature-icon">
+                    <i aria-hidden="true" class="fa fa fa-wrench"> </i>
+                  </div>
+                  <div class="feature-title text-upper">
+                    الباقة الاقتصادية – منازل
+                  </div>
+                  <div class="feature-text not_justify">
+                    <p>
+                      صممت هذا الباقة خصيصا لأصحاب المنازل الصغيرة والتي تقل
+                      مساحتها عن 150 م2، اذ تحوي هذه الباقة الاقتصادية مجموعة
+                      زيارات تصحيحية وأخرى تفقدية. و نضمن لكم صيانة بأعلى جودة
+                      من خـلال...
+                    </p>
+                  </div>
+                  <div class="item-links offerButton pb-40">
+                    <a
+                      href="https://www.weprofix.com/JO/4/ar/package/10/الباقة-الاقتصادية-–-منازل"
+                      class="btn text-upper btn-md small"
+                      >اظهار المزيد</a
+                    >
+                    <a
+                      nohref=""
+                      onclick='addToCart(10,"الباقة الاقتصادية – منازل","package")'
+                      class="btn text-upper btn-md small"
+                      >اضافة الى السلة</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="feature feature-side text-left showup-translate-up"
+                  data-inview-showup="showup-translate-up"
+                >
+                  <div class="feature-icon">
+                    <i aria-hidden="true" class="fa fa fa-wrench"> </i>
+                  </div>
+                  <div class="feature-title text-upper">
+                    الباقة الشاملة – منازل
+                  </div>
+                  <div class="feature-text not_justify">
+                    <p>
+                      صممت هذا الباقة خصيصا لأصحاب المنازل المتوسطة والتي تزيد
+                      مساحتها عن 150 م2، اذ تحوي هذه الباقة الاقتصادية مجموعة
+                      زيارات تصحيحية, تفقدية، طارئة وأخرى خاصة بأعمال التعقيم. و
+                      نضمن...
+                    </p>
+                  </div>
+                  <div class="item-links offerButton pb-40">
+                    <a
+                      href="https://www.weprofix.com/JO/4/ar/package/9/الباقة-الشاملة-–-منازل"
+                      class="btn text-upper btn-md small"
+                      >اظهار المزيد</a
+                    >
+                    <a
+                      nohref=""
+                      onclick='addToCart(9,"الباقة الشاملة – منازل","package")'
+                      class="btn text-upper btn-md small"
+                      >اضافة الى السلة</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="feature feature-side text-left showup-translate-up"
+                  data-inview-showup="showup-translate-up"
+                >
+                  <div class="feature-icon">
+                    <i aria-hidden="true" class="fa fa fa-wrench"> </i>
+                  </div>
+                  <div class="feature-title text-upper">
+                    الباقة الاقتصادية – منشآت
+                  </div>
+                  <div class="feature-text not_justify">
+                    <p>
+                      صممت هذه الباقة خصيصاً للمطاعم والشركات والمنشآت الصغيرة
+                      والمتوسطة، تتكون هذه الحزمة الاقتصادية من بعض الزيارات
+                      التصحيحية والتفقدية مما يجنب تعطل المنشأة قدر المستطاع...
+                    </p>
+                  </div>
+                  <div class="item-links offerButton pb-40">
+                    <a
+                      href="https://www.weprofix.com/JO/4/ar/package/8/الباقة-الاقتصادية-–-منشآت"
+                      class="btn text-upper btn-md small"
+                      >اظهار المزيد</a
+                    >
+                    <a
+                      nohref=""
+                      onclick='addToCart(8,"الباقة الاقتصادية – منشآت","package")'
+                      class="btn text-upper btn-md small"
+                      >اضافة الى السلة</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div
+                  class="feature feature-side text-left showup-translate-up"
+                  data-inview-showup="showup-translate-up"
+                >
+                  <div class="feature-icon">
+                    <i aria-hidden="true" class="fa fa fa-wrench"> </i>
+                  </div>
+                  <div class="feature-title text-upper">
+                    الباقة الشاملة – منشآت
+                  </div>
+                  <div class="feature-text not_justify">
+                    <p>
+                      صممت هذا الباقة خصيصا للمطاعم والشركات والمنشآت الصغيرة
+                      والمتوسطة التي تتنوع فيها الأعطال بين الطارئة والتصحيحية
+                      والتفقدية. ونضمن لكم صيانة بأعلى جودة من خـلال كادر قوي
+                      واحترافي...
+                    </p>
+                  </div>
+                  <div class="item-links offerButton pb-40">
+                    <a
+                      href="https://www.weprofix.com/JO/4/ar/package/7/الباقة-الشاملة-–-منشآت"
+                      class="btn text-upper btn-md small"
+                      >اظهار المزيد</a
+                    >
+                    <a
+                      nohref=""
+                      onclick='addToCart(7,"الباقة الشاملة – منشآت","package")'
+                      class="btn text-upper btn-md small"
+                      >اضافة الى السلة</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="dark-bg page-padding_45 bg fixed text-white gradient-overlay counter-section rtl"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(https://www.weprofix.com/uploads/images/home_msg/home_msg8_75.jpg)
+            center no-repeat rgba(0, 0, 0, 0.7);
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-4 mb-20">
+            <div class="section-title">
+              <div class="section-title">
+                <h2 class="title title2">إحصائيات <label> بروفكس </label></h2>
+              </div>
+            </div>
+            <p></p>
+            <p>نظرة سريعة على إنجازات فريق بروفكس</p>
+            <p></p>
+          </div>
+          <div class="col-md-6 col-sm-8 mb-20">
+            <div class="counter-block pt-20">
+              <div class="col-sm-6 col-xs-6 col-xx-12 mb-40">
+                <div class="counter left_icn">
+                  <i class="glyph-icon fa fa-wrench"></i>
+                  <span class="timer" data-to="100000" data-speed="10000"
+                    >100,000</span
+                  >
+                  <label> حالات الصيانة المنفذة</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6 col-xx-12 mb-40">
+                <div class="counter left_icn">
+                  <i class="glyph-icon fa fa-user"></i>
+                  <span class="timer" data-to="5000" data-speed="10000"
+                    >5,000</span
+                  >
+                  <label> عدد الزبائن التجاريين</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6 col-xx-12 mb-40">
+                <div class="counter left_icn">
+                  <i class="glyph-icon fa fa-group"></i>
+                  <span class="timer" data-to="1000" data-speed="10000"
+                    >1,000</span
+                  >
+                  <label> فنيي بروفكس</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6 col-xx-12 mb-40">
+                <div class="counter left_icn">
+                  <i class="glyph-icon fa fa-line-chart"></i>
+                  <span class="timer" data-to="6" data-speed="10000">6</span>
+                  <label> عدد فروع بروفكس</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section-ptb ltr">
+      <div class="container">
+        <div class="col-sm-12 text-center">
+          <div class="section-title">
+            <h2 class="title">نحن نخدم بفخر</h2>
+          </div>
+        </div>
+      </div>
+      <div
+        class="owl-carousel owl-theme owl-loaded"
+        data-inview-showup="showup-translate-up"
+        data-items="5"
+        data-owl-responsive="2;3;4;5"
+        data-autoplay="true"
+        data-autoplaytimeout="00"
+      >
+        <div class="owl-stage-outer">
+          <div
+            class="owl-stage"
+            style="
+              transform: translate3d(-1884.4px, 0px, 0px);
+              transition: all 0.25s ease 0s;
+              width: 10229.6px;
+            "
+          >
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="نقابة المهندسين الأردنيين"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/__________%20__________________%20__________________%20_1_.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="أوريكس"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______________(1).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="تشيكين تيكا"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/____________%20________.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="Aram"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/9a.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="نيدكو"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/NEDCO.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="ملتقى الأعمال الفلسطيني الأردني"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/pjf(1).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="راديسون بلو"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/radisson%20blu.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item active"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="الخريجي"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______________%20_1_(1).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item active"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="دواكم"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/__________(2).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item active"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="هيئة تنظيم قطاع الاتصالات"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/________%20__________________.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item active"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="إندوفر"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/endeavor%20_1_.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item active"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="تكنوليج"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______________(2).jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item active"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="جمعية الرخاء"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/__________%20____________.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="المهنية"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______________%20_2_.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="كالامازو جريل"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/213(2).jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="استشارات الأعمال"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/________________%20______________.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="دار المنهل"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______-____________.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="إس كي كي"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/SSk.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="لومينوس"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______________.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="مارينا"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/marina.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="برج الشاطئ"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______%20____________(2).jpg"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="مكيون"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/Makkiyoon.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="بروفكت"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/____________.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="ميدغلف"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/medgulf%20_2_.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="نادي سما عمان"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/________%20______%20________.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="تالاباي"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/talabay%20_1_.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="مطعم سلمى"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/salma.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="الإمارات"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/________________.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="نقابة المهندسين الأردنيين"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/__________%20__________________%20__________________%20_1_.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="أوريكس"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______________(1).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="تشيكين تيكا"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/____________%20________.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="Aram"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/9a.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 239.2px; margin-right: 30px">
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="نيدكو"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/NEDCO.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="ملتقى الأعمال الفلسطيني الأردني"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/pjf(1).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="راديسون بلو"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/radisson%20blu.png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="الخريجي"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/______________%20_1_(1).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="دواكم"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/__________(2).png"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 239.2px; margin-right: 30px"
+            >
+              <div class="item bg-white">
+                <a class="grayscale-link" nohref="">
+                  <img
+                    title="هيئة تنظيم قطاع الاتصالات"
+                    class="image img-responsive center-block"
+                    src="https://www.weprofix.com/uploads/images/client/________%20__________________.jpg"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-controls">
+          <div class="owl-nav">
+            <div class="owl-prev" style="display: none">
+              <i class="fa fa-angle-left fa-2x"></i>
+            </div>
+            <div class="owl-next" style="display: none">
+              <i class="fa fa-angle-right fa-2x"></i>
+            </div>
+          </div>
+          <div class="owl-dots" style="display: none"></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="dark-bg page-section-ptb bg fixed text-white gradient-overlay counter-section pb-60 rtl"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(https://www.weprofix.com/uploads/images/home_msg/home_msg9_93.jpg)
+            center no-repeat rgba(0, 0, 0, 0.7);
+      "
+    >
+      <div class="container rtl">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12 mb-20">
+            <div class="section-title">
+              <h2 class="title title2">تطبيق <label> اي بروفكس </label></h2>
+            </div>
+            <div class="padding_18">
+              <p dir="rtl" style="text-align: justify">
+                إذا كنت مهموم عشان صيانة مرافق بيتك&nbsp;ومش عارف شو
+                تعمل..&nbsp;
+              </p>
+
+              <p dir="rtl" style="text-align: justify">
+                ريحٌ بالك..&nbsp;لأن بروفكس هي الحل.. و شو ما كان نوع الخدمة
+                اللي بدك إياها من&nbsp; سباكة ونجارة ودهان وكهرباء أو أي إشي
+                غيرها..
+              </p>
+
+              <p dir="rtl" style="text-align: justify">
+                رايح تلاقيها عنّا...وموجودة على تطبيق&nbsp;eprofix حمّل التطبيق
+                وريّح بالك
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12 mb-20">
+            <div>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.technoliege.eprofix.customerapp&amp;fbclid=IwAR00mT4ohDjDLBYAdZ1XdSKAL4V5sNCXdwy5D0ULgDPrihNESh8WpqYrDcA"
+                ><img
+                  class="img-responsive mobileApp"
+                  src="https://www.weprofix.com/images/google.png"
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://apps.apple.com/jo/app/profix-platform/id1444727906"
+                ><img
+                  class="img-responsive mobileApp"
+                  src="https://www.weprofix.com/images/apple.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section-ptb">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-title text-center">
+              <h2 class="title">ماذا قالوا عنا</h2>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 ltr">
+            <div
+              class="owl-carousel owl-theme owl-loaded"
+              data-nav-arrow="true"
+              data-items="3"
+              data-xs-items="1"
+            >
+              <div class="owl-stage-outer">
+                <div
+                  class="owl-stage"
+                  style="
+                    transform: translate3d(-1536px, 0px, 0px);
+                    transition: all 0.25s ease 0s;
+                    width: 3840px;
+                  "
+                >
+                  <div
+                    class="owl-item cloned"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="يسعدني أن أتقدم لكم بخالص الشكر والتقدير على حسن تعاونكم وأدائكم المميز في مجال الصيانة في منتجع Tala Bay وعلى الجهد المتميز والسرعة وحسن التصرف في أداء واجبات العمل المقدم بصورة مشرفة"
+                        >
+                          <div class="tt-quote">“</div>
+                          يسعدني أن أتقدم لكم بخالص الشكر والتقدير على حسن
+                          تعاونكم وأدائكم المميز في مجال الصيانة...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">أحمد رياض</div>
+                        <div class="pexx-tt-user-subtitle">
+                          القنصل المصري في العقبة
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="تجربة ناجحة دفعتنا للتوقيع معهم عقد لخمس سنوات مع بروفكس من خلال صيانة فنادق قرية Tala Bay"
+                        >
+                          <div class="tt-quote">“</div>
+                          تجربة ناجحة دفعتنا للتوقيع معهم عقد لخمس سنوات مع
+                          بروفكس من خلال صيانة فنادق قرية Tala...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">محمد زعيتر</div>
+                        <div class="pexx-tt-user-subtitle">
+                          الرئيس التنفيذي لشركة الأردن
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="ما شاهدته في بروفكس فاق ما شاهدته في شركة Pimico Plumbers  البريطانية، أحسنتم بروفكس شكرا لكم"
+                        >
+                          <div class="tt-quote">“</div>
+                          ما شاهدته في بروفكس فاق ما شاهدته في شركة Pimico
+                          Plumbers البريطانية، أحسنتم بروفكس شكرا ...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">
+                          الأستاذ أحمد الشقيري
+                        </div>
+                        <div class="pexx-tt-user-subtitle">
+                          مقدم برنامج خواطر
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="وجدت عند بروفكس بعض ما كنت أحلم بتأسيسه في عالم الصيانة المنزلية"
+                        >
+                          <div class="tt-quote">“</div>
+                          وجدت عند بروفكس بعض ما كنت أحلم بتأسيسه في عالم
+                          الصيانة المنزلية...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">جابر حميم</div>
+                        <div class="pexx-tt-user-subtitle">
+                          عضو في غرفة تجارة الشرقية
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="يسعدني أن أتقدم لكم بخالص الشكر والتقدير على حسن تعاونكم وأدائكم المميز في مجال الصيانة في منتجع Tala Bay وعلى الجهد المتميز والسرعة وحسن التصرف في أداء واجبات العمل المقدم بصورة مشرفة"
+                        >
+                          <div class="tt-quote">“</div>
+                          يسعدني أن أتقدم لكم بخالص الشكر والتقدير على حسن
+                          تعاونكم وأدائكم المميز في مجال الصيانة...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">أحمد رياض</div>
+                        <div class="pexx-tt-user-subtitle">
+                          القنصل المصري في العقبة
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="تجربة ناجحة دفعتنا للتوقيع معهم عقد لخمس سنوات مع بروفكس من خلال صيانة فنادق قرية Tala Bay"
+                        >
+                          <div class="tt-quote">“</div>
+                          تجربة ناجحة دفعتنا للتوقيع معهم عقد لخمس سنوات مع
+                          بروفكس من خلال صيانة فنادق قرية Tala...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">محمد زعيتر</div>
+                        <div class="pexx-tt-user-subtitle">
+                          الرئيس التنفيذي لشركة الأردن
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="ما شاهدته في بروفكس فاق ما شاهدته في شركة Pimico Plumbers  البريطانية، أحسنتم بروفكس شكرا لكم"
+                        >
+                          <div class="tt-quote">“</div>
+                          ما شاهدته في بروفكس فاق ما شاهدته في شركة Pimico
+                          Plumbers البريطانية، أحسنتم بروفكس شكرا ...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">
+                          الأستاذ أحمد الشقيري
+                        </div>
+                        <div class="pexx-tt-user-subtitle">
+                          مقدم برنامج خواطر
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="وجدت عند بروفكس بعض ما كنت أحلم بتأسيسه في عالم الصيانة المنزلية"
+                        >
+                          <div class="tt-quote">“</div>
+                          وجدت عند بروفكس بعض ما كنت أحلم بتأسيسه في عالم
+                          الصيانة المنزلية...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">جابر حميم</div>
+                        <div class="pexx-tt-user-subtitle">
+                          عضو في غرفة تجارة الشرقية
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="يسعدني أن أتقدم لكم بخالص الشكر والتقدير على حسن تعاونكم وأدائكم المميز في مجال الصيانة في منتجع Tala Bay وعلى الجهد المتميز والسرعة وحسن التصرف في أداء واجبات العمل المقدم بصورة مشرفة"
+                        >
+                          <div class="tt-quote">“</div>
+                          يسعدني أن أتقدم لكم بخالص الشكر والتقدير على حسن
+                          تعاونكم وأدائكم المميز في مجال الصيانة...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">أحمد رياض</div>
+                        <div class="pexx-tt-user-subtitle">
+                          القنصل المصري في العقبة
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style="width: 354px; margin-right: 30px"
+                  >
+                    <div class="item rtl">
+                      <div class="simple-testimonial text-center">
+                        <div class="tt-title"></div>
+
+                        <div
+                          class="tt-content"
+                          title="تجربة ناجحة دفعتنا للتوقيع معهم عقد لخمس سنوات مع بروفكس من خلال صيانة فنادق قرية Tala Bay"
+                        >
+                          <div class="tt-quote">“</div>
+                          تجربة ناجحة دفعتنا للتوقيع معهم عقد لخمس سنوات مع
+                          بروفكس من خلال صيانة فنادق قرية Tala...
+                        </div>
+                        <div class="tt-icon"></div>
+                        <div class="pexx-tt-user-title">محمد زعيتر</div>
+                        <div class="pexx-tt-user-subtitle">
+                          الرئيس التنفيذي لشركة الأردن
+                        </div>
+                        <br />
+                        <br />
+                        <div class="tt-rating">
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                          <i aria-hidden="true" class="tt-star fa fa-star"> </i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-controls">
+                <div class="owl-nav">
+                  <div class="owl-prev">
+                    <i class="fa fa-angle-left fa-2x"></i>
+                  </div>
+                  <div class="owl-next">
+                    <i class="fa fa-angle-right fa-2x"></i>
+                  </div>
+                </div>
+                <div class="owl-dots" style="display: none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--cart-->
+
+    <div id="Existing" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-body" style="background-color: white; padding: 0px">
+          <div class="alert outline alert-danger fade in">
+            <strong> العنصر موجود بالفعل </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="successAdd" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-body" style="background-color: white; padding: 0px">
+          <div class="alert outline alert-success fade in">
+            <strong> تمت الإضافة إلى السلة بنجاح </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="block-cart collapse"
+      data-block="cart"
+      data-show-block-class="animation-scale-top-right"
+      data-hide-block-class="animation-unscale-top-right"
+    >
+      <div class="cart-inner">
+        <a nohref="" class="close-link" data-close-block="">X</a>
+        <h4 class="text-upper text-center">سلة المشتريات</h4>
+        <div class="items">
+          <div
+            class="items collapse"
+            data-block="cart"
+            data-show-block-class="animation-scale-top-right"
+            data-hide-block-class="animation-unscale-top-right"
+            id="cartItem"
+          >
+            <h3 class="rtl" id="cart_title">
+              إن عربتك فارغة. الرجاء اضافة خدمات الى العربة
+            </h3>
+          </div>
+        </div>
+        <div id="cart_button"></div>
+        <div id="cart_msg"></div>
+      </div>
+    </div>
+    <!--cart-->
+    <script type="text/javascript">
+      function openKCFinder(div) {
+        window.KCFinder = {
+          callBack: function (url) {
+            window.KCFinder = null;
+
+            var img = new Image();
+            img.src = url;
+            img.onload = function () {
+              div.innerHTML = '<img id="img" src="' + url + '" />';
+              var index = url.split("/")[1];
+              var url2 = url.replace("/" + index, "..");
+              $("#imageVal").val(url2);
+              var img = document.getElementById("img");
+              var o_w = img.offsetWidth;
+              var o_h = img.offsetHeight;
+              var f_w = div.offsetWidth;
+              var f_h = div.offsetHeight;
+              if (o_w > f_w || o_h > f_h) {
+                if (f_w / f_h > o_w / o_h) f_w = parseInt((o_w * f_h) / o_h);
+                else if (f_w / f_h < o_w / o_h)
+                  f_h = parseInt((o_h * f_w) / o_w);
+                img.style.width = f_w + "px";
+                img.style.height = f_h + "px";
+              } else {
+                f_w = o_w;
+                f_h = o_h;
+              }
+              img.style.marginLeft =
+                parseInt((div.offsetWidth - f_w) / 2) + "px";
+              img.style.marginTop =
+                parseInt((div.offsetHeight - f_h) / 2) + "px";
+              img.style.visibility = "visible";
+            };
+          },
+        };
+
+        window.open(
+          "plugins/kcfinder/browse.php?type=images&dir=images/public",
+          "kcfinder_image",
+          "status=0, toolbar=0, location=0, menubar=0, " +
+            "directories=0, resizable=1, scrollbars=0, width=800, height=600"
+        );
+      }
+    </script>
+
+    <footer
+      class="footer footer-2 dark-bg bg fixed bg-overlay-black-80 page-section-pt rtl"
+      style="
+        background-image: url(https://www.weprofix.com/uploads/images/home_msg/home_msg2_14.jpg);
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 mb-30">
+            <div class="footer-about">
+              <span class="mb-30 btn-block">
+                <img
+                  id="logo-footer"
+                  src="https://www.weprofix.com/uploads/images/setting/logo2.png"
+                  width="180"
+                  alt="بروفكس"
+                  title="بروفكس"
+                />
+              </span>
+              <p></p>
+              <div class="footer-address mt-20">
+                <ul class="list-inline">
+                  <li><h3 class="text-white">سنغافورة</h3></li>
+                  <li class="ltr">
+                    <i class="fa fa-phone"></i>
+                    <span>
+                      <a href="tel:+65 62320276">+65 62320276</a>
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                      <a href="mailto:info@weprofix.com"
+                        >info@weprofix.com</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+                <ul class="list-inline">
+                  <li><h3 class="text-white">الأردن</h3></li>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/?q=31.995529707612047,35.85591371177179"
+                      target="_blank"
+                    >
+                      <i class="fa fa-car"></i>
+
+                      <span>خذني الى هناك</span>
+                    </a>
+                  </li>
+                  <li class="ltr">
+                    <i class="fa fa-phone"></i>
+                    <span>
+                      <a href="tel:+96264000099">+96264000099</a>
+                    </span>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                      <a href="mailto:info@weprofix.com"
+                        >info@weprofix.com</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Detail /- -->
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-30">
+            <div class="section-title"><h4 class="title">فروعنا</h4></div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-about">
+                  <p></p>
+                  <div class="footer-address mt-20">
+                    <ul class="list-inline">
+                      <li><h3 class="text-white">جدة</h3></li>
+                      <li class="ltr">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                          <a href="tel:+966920009475">+966920009475</a>
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                          <a href="mailto:infojeddah@weprofix.com"
+                            >infojeddah@weprofix.com</a
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-about">
+                  <p></p>
+                  <div class="footer-address mt-20">
+                    <ul class="list-inline">
+                      <li><h3 class="text-white">مكة</h3></li>
+                      <li class="ltr">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                          <a href="tel:079999999999">079999999999</a>
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                          <a href="mailto:amer@whatsnewit.com"
+                            >amer@whatsnewit.com</a
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-about">
+                  <p></p>
+                  <div class="footer-address mt-20">
+                    <ul class="list-inline">
+                      <li><h3 class="text-white">فلسطين</h3></li>
+                      <li class="ltr">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                          <a href="tel:1-700-776-349">1-700-776-349</a>
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                          <a href="mailto:infopalestine@weprofix.com"
+                            >infopalestine@weprofix.com</a
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-about">
+                  <p></p>
+                  <div class="footer-address mt-20">
+                    <ul class="list-inline">
+                      <li><h3 class="text-white">الإمارات العين</h3></li>
+                      <li class="ltr">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                          <a href="tel:+971600535350">+971600535350</a>
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                          <a href="mailto:infoalain@weprofix.com"
+                            >infoalain@weprofix.com</a
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-about">
+                  <p></p>
+                  <div class="footer-address mt-20">
+                    <ul class="list-inline">
+                      <li><h3 class="text-white">المدينة المنورة</h3></li>
+                      <li>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                          <a href="mailto:Medinah@weprofix.com"
+                            >Medinah@weprofix.com</a
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="footer-newsletter">
+              <div class="section-title">
+                <h4 class="title">اشترك الآن لتلقي أحدث عروض الصيانة</h4>
+              </div>
+              <p></p>
+              <div class="input-group divcenter">
+                <input
+                  id="EMAILSUBSCRIBE"
+                  type="email"
+                  placeholder="الرجاء ادخال بريدك الالكتروني "
+                  class="form-control"
+                />
+                <button
+                  type="submit"
+                  id="newsletter_email_button"
+                  class="button profix small"
+                >
+                  اشتراك
+                </button>
+              </div>
+              <div class="subscribeTest">
+                <div
+                  class="alert outline alert-success fade in successSubscribe"
+                  style="display: none"
+                >
+                  <strong> شكرا لك ... تم التسجيل</strong>
+                </div>
+                <div
+                  class="alert outline alert-danger fade in errorSubscribe"
+                  style="display: none"
+                >
+                  <strong> حدث خطأ ... الايميل موجود من قبل</strong>
+                </div>
+                <div
+                  class="alert outline alert-danger fade in nottrueSubscribe"
+                  style="display: none"
+                >
+                  <strong> البريد الالكتروني غير صحيح</strong>
+                </div>
+                <div
+                  class="alert outline alert-danger fade in emptyfield"
+                  style="display: none"
+                >
+                  <strong> هذا الحقل مطلوب</strong>
+                </div>
+              </div>
+              <div class="subscribedata" style="display: none"></div>
+            </div>
+            <div class="fixed-social-footer">
+              <a href="https://www.facebook.com/ProfixJo/" target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/profixjo/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCMrjtCDeu4KOqJTPPU7f1qw"
+                target="_blank"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-widget mt-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <p class="text-white rtl">
+                ©حقوق النشر <span id="copyright"> 2022 </span>
+                <a nohref="#"> لدى بروفكس . </a>
+              </p>
+              تم التطوير بواسطة
+              <a href="http://whatsnewit.com" target="_blank"
+                ><span> ما الجديد لتقنية المعلومات</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end container-fluid -->
+    </footer>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 30
+        ) {
+          document.getElementById("fixed-social").style.display = "block";
+        } else {
+          document.getElementById("fixed-social").style.display = "none";
+        }
+      }
+
+      $("#openCart").click(function () {
+        $(".collapse").css("display", "block");
+      });
+      $(".close-link").click(function () {
+        $(".collapse").css("display", "none");
+      });
+
+      function addToCart(
+        id,
+        title,
+        type,
+        category_fk = 0,
+        ref = 0,
+        cate_ref = 0
+      ) {
+        var size = parseInt($("#cartSize").text());
+        var button =
+          ' <div class="clearfix">\n' +
+          '                <a href="https://www.weprofix.com/JO/4/ar/cart"\n' +
+          '                   class="button profix small">اظهار سلة المشتريات</a>\n' +
+          "            </div>";
+        //console.log("Size: "+size);
+        $.ajax({
+          url: "https://www.weprofix.com/pages/ajax/addToCart.php",
+          type: "post",
+          data: {
+            id: id,
+            type: type,
+            title: title,
+            category_fk: category_fk,
+            ref: ref,
+            cate_ref: cate_ref,
+            lang: "ar",
+          },
+          dataType: "HTML",
+          success: function (data) {
+            console.log("data: " + data);
+            if (data != false) {
+              $("#cartSize").text(size + 1);
+              $("#cartItem").html(data + button);
+              $("#successAdd").modal("show");
+              $("#cart_title").html("");
+              $("#cart_button").remove();
+              setTimeout(function () {
+                $("#successAdd").modal("hide");
+              }, 1000);
+            } else {
+              $("#Existing").modal("show");
+              setTimeout(function () {
+                $("#Existing").modal("hide");
+              }, 1000);
+            }
+          },
+        });
+      }
+    </script>
+    <script>
+      function removeFromCart(id, type, title) {
+        var size = parseInt($("#cartSize").text());
+        var button =
+          ' <div class="clearfix">\n' +
+          '                <a href="https://www.weprofix.com/JO/4/ar/cart"\n' +
+          '                   class="button profix small">اظهار سلة المشتريات</a>\n' +
+          "            </div>";
+        $("#cartItem").html("");
+        $.ajax({
+          url: "https://www.weprofix.com/pages/ajax/removeFromCart.php",
+          type: "post",
+          data: { id: id, type: type, title: title, lang: "ar" },
+          dataType: "HTML",
+          success: function (data) {
+            if (data != false) {
+              $("#cartItem").html(data + button);
+              $("#cartSize").text(size - 1);
+              $("#cart_button").remove();
+              $("#cart-item-" + type + "-" + id).remove();
+              $("#cart-item-" + type + "-" + id + "-P").remove();
+              $("#cart-item-" + type + "-" + id + "-C").remove();
+            }
+          },
+        });
+      }
+
+      function removeCustomOrderFromCart() {
+        var size = parseInt($("#cartSize").text());
+        $("#cartItem").html("");
+        $.ajax({
+          url: "https://www.weprofix.com/pages/ajax/removeFromCart.php",
+          type: "post",
+          data: { lang: "ar" },
+          dataType: "HTML",
+          success: function (data) {
+            if (data != false) {
+              $("#cartItem").html(data);
+              $("#cartSize").text(size - 1);
+              $("#cart_button").remove();
+              $("#cart-item-custom").remove();
+              $("#cart-item-custom-P").remove();
+            }
+          },
+        });
+      }
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!--<script type="text/javascript" src="--><!--js/jquery.min.js"></script>-->
+
+    <!-- bootstrap -->
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/js/bootstrap.min.js"
+    ></script>
+    <!-- appear -->
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/js/jquery.appear.js"
+    ></script>
+    <!-- Menu -->
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/js/mega-menu/mega_menu.js"
+    ></script>
+    <!-- owl-carousel -->
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/js/owl-carousel/owl.carousel.min.js"
+    ></script>
+    <!-- counter -->
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/js/counter/jquery.countTo.js"
+    ></script>
+    <!-- REVOLUTION JS FILES -->
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/revolution/js/jquery.themepunch.tools.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/revolution/js/jquery.themepunch.revolution.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+
+    <!-- custom -->
+    <script
+      type="text/javascript"
+      src="https://www.weprofix.com/js/custom.js"
+    ></script>
+    <script src="https://www.weprofix.com/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $("#newsletter_email_button").click(function () {
+        // alert();
+        var EMAILSUBSCRIBE = $("#EMAILSUBSCRIBE").val();
+        if (EMAILSUBSCRIBE != "") {
+          var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+          if (emailReg.test(EMAILSUBSCRIBE)) {
+            $("#EMAILSUBSCRIBE").css("border", "solid 2px green");
+            $(".subscribeTest").css("display", "block");
+            $(".subscribedata").html("");
+
+            $.ajax({
+              url: "https://www.weprofix.com/pages/ajax/subscribe.php?SPath=https://www.weprofix.com/&langID=2&lang=ar&type=email",
+              type: "POST",
+              data: { email: EMAILSUBSCRIBE },
+              success: function (data) {
+                $(".subscribedata").html(data);
+                if (check == 1) {
+                  $(".errorSubscribe").css("display", "none");
+                  $(".successSubscribe").css("display", "block");
+                  $(".nottrueSubscribe").css("display", "none");
+                  $(".emptyfield").css("display", "none");
+                  $("#EMAILSUBSCRIBE").val("");
+                } else if (check == 2) {
+                  $(".successSubscribe").css("display", "none");
+                  $(".errorSubscribe").css("display", "block");
+                  $("#EMAILSUBSCRIBE").css("border", "solid 2px red");
+                  $(".nottrueSubscribe").css("display", "none");
+                  $(".emptyfield").css("display", "none");
+                }
+              }, // end success
+            });
+          } else {
+            $("#EMAILSUBSCRIBE").css("border", "solid 2px red");
+            $(".errorSubscribe").css("display", "none");
+            $(".successSubscribe").css("display", "none");
+            $(".nottrueSubscribe").css("display", "block");
+            $(".emptyfield").css("display", "none");
+          }
+        } else {
+          $("#EMAILSUBSCRIBE").css("border", "solid 2px red");
+          $(".errorSubscribe").css("display", "none");
+          $(".successSubscribe").css("display", "none");
+          $(".emptyfield").css("display", "block");
+          $(".nottrueSubscribe").css("display", "none");
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#login_button").click(function () {
+          var username = $("#myusername").val();
+          var password = $("#mypassword").val();
+          if (username == "") {
+            $("#myusername1").css("display", "block");
+          }
+          if (password == "") {
+            $("#mypassword1").css("display", "block");
+          }
+          if (username != "" && password != "") {
+            $.ajax({
+              type: "POST",
+              url: "https://www.weprofix.com/pages/ajax/checklogin.php",
+              data: { username: username, password: password },
+              dataType: "json",
+              success: function (data) {
+                if (data == "true") {
+                  $("#exampleModal").modal("hide");
+                  window.location.href =
+                    "https://www.weprofix.com/pages/lapReport.php";
+                } else {
+                  $("#logError").css("display", "block");
+                }
+              },
+            });
+          }
+        });
+        $("#ForgotPass").click(function () {
+          var username = $("#myusername").val();
+          if (username == "") {
+            $("#myusername1").css("display", "block");
+          }
+          if (username != "") {
+            $.ajax({
+              type: "POST",
+              url: "https://www.weprofix.com/pages/ajax/forgetPassword.php",
+              data: { username: username },
+              dataType: "json",
+              success: function (data) {
+                $("#sendEmail").css("display", "block");
+              },
+            });
+          }
+        });
+        $("#changePassWord").click(function () {
+          var Password = $("#ChangePassword").val();
+          var PasswordC = $("#passwordConfirm").val();
+          var VisitorName = $("#VisitorName").val();
+          if (Password == "") {
+            $("#ChPassword").css("display", "block");
+          }
+          if (PasswordC == "") {
+            $("#passwordC").css("display", "block");
+          }
+          if (Password != "" && PasswordC != "" && Password == PasswordC) {
+            $.ajax({
+              type: "POST",
+              url: "https://www.weprofix.com/pages/ajax/changePassword.php",
+              data: { Password: Password, VisitorName: VisitorName },
+              dataType: "json",
+              success: function (data) {
+                if (data == "true") {
+                  $("#changedPassword").css("display", "block");
+                  setTimeout(function () {
+                    window.location.href = "https://www.weprofix.com/";
+                  }, 2000);
+                }
+              },
+            });
+          } else {
+            $("#NotMatch").css("display", "block");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      $(".u-vmenu ul li").each(function () {
+        if (
+          $(this).find("a").attr("href") == decodeURIComponent(document.URL)
+        ) {
+          $(this).find("a").parent().addClass("activeMenux");
+          $(".activeMenux").children("ul").first().show();
+          $(".activeMenux")
+            .children("a")
+            .first()
+            .css("background-color", "rgb(229, 225, 225)");
+          $(".activeMenux")
+            .children("a i")
+            .first()
+            .css("background-color", "red");
+        }
+      });
+      $(".u-vmenu ul li").each(function () {
+        if (
+          $(this).find("a").attr("nohref") == decodeURIComponent(document.URL)
+        ) {
+          $(this).find("a").parent().addClass("activeMenux");
+          $(".activeMenux").children("ul").first().show();
+          $(".activeMenux")
+            .children("a")
+            .first()
+            .css("background-color", "rgb(229, 225, 225)");
+          $(".activeMenux").children("a i").css("background-color", "red");
+        }
+      });
+
+      $(".u-vmenu ul li ul li").each(function () {
+        if (
+          $(this).find("a").attr("href") == decodeURIComponent(document.URL)
+        ) {
+          $(this).find("a").parent().parent().parent().addClass("activeMenu");
+
+          $(".activeMenu").children("ul").first().show();
+          $(".activeMenu")
+            .children("a")
+            .first()
+            .css("background-color", "rgb(229, 225, 225)");
+          $(".activeMenu").children("a i").css("background-color", "red");
+        }
+      });
+      $(".u-vmenu ul li ul li ul li").each(function () {
+        if (
+          $(this).find("a").attr("href") == decodeURIComponent(document.URL)
+        ) {
+          $(this)
+            .find("a")
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .parent()
+            .addClass("activeMenuq");
+          $(".activeMenuq").children("ul").first().show();
+          $(".activeMenuq")
+            .children("a")
+            .first()
+            .css("background-color", "rgb(229, 225, 225)");
+          $(".activeMenuq").children("a i").css("background-color", "red");
+        }
+      });
+
+      // var isMobile = {
+      //     Android: function() {
+      //         return navigator.userAgent.match(/Android/i);
+      //     },
+      //     BlackBerry: function() {
+      //         return navigator.userAgent.match(/BlackBerry/i);
+      //     },
+      //     iOS: function() {
+      //         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      //     },
+      //     Opera: function() {
+      //         return navigator.userAgent.match(/Opera Mini/i);
+      //     },
+      //     Windows: function() {
+      //         return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+      //     },
+      //     any: function() {
+      //         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+      //     }
+      // };
+      // $( window ).resize(function() {
+
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      if (isMobile) {
+        var element = $(".sidebar-widget .section-title .title").html();
+        // element.innerHTML = element+" "+"+";
+        $(".sidebar-widget .section-title .title").html(" + " + element);
+
+        // $( ".sidebar-widget .widget-title" ).click(function() {
+        $(".sidebar-widget .section-title .title").click(function () {
+          var displayval = $("ul.list-hand").css("display");
+          if (displayval == "none") {
+            $("ul.list-hand").css("display", "block");
+            $(".sidebar-widget .section-title .title").html(" - " + element);
+          } else {
+            $("ul.list-hand").css("display", "none");
+            $(".sidebar-widget .section-title .title").html(" + " + element);
+          }
+          console.log("display: " + displayval);
+        });
+        var element2 = $(".sidebar-widget .widget-title").html();
+        $(".sidebar-widget .widget-title").html(" + " + element2);
+
+        // $( ".sidebar-widget .widget-title" ).click(function() {
+        $(".sidebar-widget .widget-title").click(function () {
+          var displayval = $(".sidebar-widget .recent-post").css("display");
+          if (displayval == "none") {
+            $(".sidebar-widget .recent-post").css("display", "block");
+            $(".sidebar-widget .widget-title").html(" - " + element2);
+          } else {
+            $(".sidebar-widget .recent-post").css("display", "none");
+            $(".sidebar-widget .widget-title").html(" + " + element2);
+          }
+          console.log("display: " + displayval);
+        });
+      } else {
+        $(".sidebar-widget .recent-post").css("display", "block");
+        $("ul.list-hand").css("display", "block");
+
+        $(".sidebar-widget .section-title .title").unbind("click");
+        $(".sidebar-widget .widget-title").unbind("click");
+      }
+      // });
+
+      /* if( isMobile.iOS() ) {
+       $( ".sidebar-widget .section-title .title" ).click(function() {
+           var displayval = $( "ul.list-hand" ).css( "display" );
+           if(displayval=='none'){
+               $( "ul.list-hand" ).css("display","block");
+           }else{
+               $( "ul.list-hand" ).css("display","none");
+           }
+           console.log("display: "+displayval);
+       });
+   }*/
+    </script>
+
+    <script type="text/javascript">
+      (function ($) {
+        "use strict";
+
+        var tpj = jQuery;
+        var revapi10;
+        tpj(document).ready(function () {
+          if (tpj("#rev_slider_10_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_10_1");
+          } else {
+            revapi10 = tpj("#rev_slider_10_1")
+              .show()
+              .revolution({
+                sliderType: "standard",
+                sliderLayout: "fullwidth",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                  keyboardNavigation: "off",
+                  keyboard_direction: "horizontal",
+                  mouseScrollNavigation: "off",
+                  mouseScrollReverse: "default",
+                  onHoverStop: "off",
+                  arrows: {
+                    style: "hermes",
+                    enable: true,
+                    hide_onmobile: false,
+                    hide_onleave: true,
+                    hide_delay: 200,
+                    hide_delay_mobile: 1200,
+                    tmp: '<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div>	<div class="tp-arr-titleholder">{{title}}</div>	</div>',
+                    left: {
+                      h_align: "left",
+                      v_align: "center",
+                      h_offset: 0,
+                      v_offset: 0,
+                    },
+                    right: {
+                      h_align: "right",
+                      v_align: "center",
+                      h_offset: 0,
+                      v_offset: 0,
+                    },
+                  },
+                },
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: 1920,
+                gridheight: 970,
+                lazyType: "none",
+                shadow: 0,
+                spinner: "spinner3",
+                stopLoop: "off",
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                  simplifyAll: "off",
+                  nextSlideOnWindowFocus: "off",
+                  disableFocusListener: false,
+                },
+              });
+          }
+        });
+      })(jQuery);
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-37642435-11"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-37642435-11");
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 1000148748 -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=AW-1000148748"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-1000148748");
+    </script>
   </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
 </html>

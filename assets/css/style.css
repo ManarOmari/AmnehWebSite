@@ -509,19 +509,18 @@ button {
 
 /** banner section **/
 
-.titlepage {
-  text-align: center;
-  padding-bottom: 60px;
-}
-
 .titlepage h2 {
   font-size: 45px;
   color: #0b0503;
   line-height: 50px;
   font-weight: bold;
-  padding: 0;
+  padding: 3px;
 }
 
+hr {
+    width: 25%;
+    border: 1px solid #00aeef;
+}
 .titlepage span {
   background: #00a8e7;
   display: block;
@@ -561,32 +560,55 @@ button {
 
 /** about section **/
 
-.about {
-  background: url(../imgs/ab_bg.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 90px 0;
+
+.feature-box {
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: right;
+    direction: rtl;
 }
 
-.about .titlepage {
-  text-align: left;
-  padding: 0;
+.feature-box.text .title {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 20px;
+    
 }
 
-.about .titlepage p {
-  color: #292e39;
-  font-size: 17px;
-  line-height: 35px;
-  font-weight: 500;
-  padding: 20px 0px 35px 0px;
+.title label {
+  color: #00aeef;
+  font-size: 35px;
+  font-weight: 700;
 }
 
-.about_img figure {
-  margin: 0;
+.service {
+  margin-top: 3rem;
 }
 
-.about_img figure img {
-  width: 100%;
+.service .titlepage {
+    text-align: center;
+}
+
+.service .row {
+  margin-top: 2rem;
+}
+
+.see_more_btn .see_more{
+    padding: 15px;
+    background: none;
+    border: 1px solid #00aeef;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.see_more_btn .see_more:hover{
+    padding: 15px;
+    background: #00aeef;;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 /** end about section **/
