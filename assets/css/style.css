@@ -354,10 +354,10 @@ button {
   outline: none;
   margin: 0;
   background: none;
+  font-family: inherit;
 }
 
-.navbar a:hover,
-.dropdown:hover .dropbtn {
+.navbar a:hover {
   color: #00aeef;
 }
 
@@ -366,9 +366,10 @@ button {
   background-color: #f9f9f9;
   min-width: 160px;
   z-index: 1;
+  position: relative;
 }
 
-.dropdown-content a {
+.dropdown .dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -382,8 +383,17 @@ button {
   color: #fff;
 }
 
+.feature-box a h6:hover {
+  font-size: x-large;
+  color: #00aeef;
+}
+
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: inline-block;
+}
+
+.dropdown .maintenance:hover {
+  color: #000;
 }
 
 .sign_btn a {
@@ -401,6 +411,31 @@ button {
 }
 .secondNav {
   justify-content: flex-end;
+}
+
+.feature-icon {
+  background: url(../imgs/feature-icon_rtl.png) no-repeat;
+  width: 56px;
+  height: 56px;
+  font-size: 26px;
+  line-height: 62px;
+  color: #00aeef;
+  position: absolute;
+  right: -35px;
+  top: -35px;
+}
+
+#paragraph {
+  height: 33vh;
+}
+
+.titlepage {
+  direction: rtl;
+  text-align: center;
+}
+
+.main_form {
+  direction: rtl;
 }
 /*-- header area --*/
 
@@ -423,13 +458,13 @@ button {
 }
 
 .logo a img {
-    max-width: 50%;
-    height: auto;
-    margin-left: 30%;
+  max-width: 50%;
+  height: auto;
+  margin-left: 30%;
 }
 
 .maintenance {
- color: #fff;
+  color: #fff;
 }
 
 /** banner section **/
@@ -518,8 +553,8 @@ button {
 }
 
 hr {
-    width: 25%;
-    border: 1px solid #00aeef;
+  width: 25%;
+  border: 1px solid #00aeef;
 }
 .titlepage span {
   background: #00a8e7;
@@ -560,21 +595,19 @@ hr {
 
 /** about section **/
 
-
 .feature-box {
-    font-size: 14px;
-    line-height: 24px;
-    position: relative;
-    margin-bottom: 50px;
-    text-align: right;
-    direction: rtl;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: right;
+  direction: rtl;
 }
 
 .feature-box.text .title {
-    margin-top: 0;
-    font-weight: 500;
-    font-size: 20px;
-    
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .title label {
@@ -588,27 +621,27 @@ hr {
 }
 
 .service .titlepage {
-    text-align: center;
+  text-align: center;
 }
 
 .service .row {
   margin-top: 2rem;
 }
 
-.see_more_btn .see_more{
-    padding: 15px;
-    background: none;
-    border: 1px solid #00aeef;
-    border-radius: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
+.see_more_btn .see_more {
+  padding: 15px;
+  background: none;
+  border: 1px solid #00aeef;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.see_more_btn .see_more:hover{
-    padding: 15px;
-    background: #00aeef;;
-    border: 1px solid #fff;
-    color: #fff;
+.see_more_btn .see_more:hover {
+  padding: 15px;
+  background: #00aeef;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 /** end about section **/
@@ -772,30 +805,15 @@ hr {
 
 /** footer **/
 
-.footer {
+footer {
   background: #042431;
   text-align: center;
+  margin-top: -89px;
 }
 
 .border-top {
   border-top: #fff solid 1px;
   padding-top: 90px;
-}
-
-.footer h3 {
-  color: #fff;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: left;
-  padding-bottom: 20px;
-}
-
-.footer_form {
-  display: flex;
-  border-bottom: #4d636c solid 1px;
-  align-items: center;
-  justify-content: center;
 }
 
 .enter {
@@ -881,4 +899,54 @@ ul.cont li {
 
 .our_box figure img {
   width: 100%;
+}
+
+.hideFromDesktop {
+  display: none;
+}
+
+.hideFromMobile {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .hideFromDesktop {
+    display: inline-block;
+  }
+  .hideFromMobile {
+    display: none;
+  }
+
+  .topnav {
+    font-size: 10px;
+  }
+
+  .list1 {
+    width: 100%;
+    align-items: flex-end;
+    direction: rtl;
+    height: 35px;
+  }
+
+  .list1 li:first-child {
+    display: none;
+  }
+
+  .secondNav {
+    display: none;
+  }
+
+  .logo a img {
+    max-width: 33%;
+    height: auto;
+    margin-left: 0%;
+  }
+
+  .feature-icon {
+    position: initial;
+  }
+
+  #paragraph {
+    height: 14vh;
+}
 }
