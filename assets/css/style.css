@@ -432,6 +432,7 @@ button {
 .titlepage {
   direction: rtl;
   text-align: center;
+  margin-top: 4em;
 }
 
 .main_form {
@@ -558,7 +559,7 @@ hr {
 }
 .titlepage span {
   background: #00a8e7;
-  display: block;
+  display: inline-block;
   height: 10px;
   width: 90px;
 }
@@ -876,6 +877,12 @@ ul.cont li {
 .copyright a:hover {
   color: #000;
 }
+.about_img figure img{
+  border-radius: 100px;
+  width: 75%;
+  margin-top: 4em;
+
+}
 
 /** end footer **/
 
@@ -907,6 +914,24 @@ ul.cont li {
 
 .hideFromMobile {
   display: inline-block;
+}
+
+.arabicText {
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+.arabicText p {
+  direction: rtl;
+  text-align: justify;
+}
+
+.englishText {
+  margin-bottom: 20px
+}
+.englishText p {
+  direction: ltr;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
