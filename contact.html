@@ -24,6 +24,9 @@
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
        media="screen">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
    <!--[if lt IE 9]>
      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -138,11 +141,11 @@
                                                  <i class="fa fa-caret-down"></i>
                                             </button>
                                             <div class="dropdown-content">
-                                                <a href="#">الحسابات والتقارير الشهريه</a>
-                                                <a href="#"> قسم التأجير </a>
-                                                <a href="#">قسم التطوير </a>
-                                                <a href="#">قسم تجديد وإصدار العقود</a>
-                                                <a href="#">إدارة الصيانه</a>
+                                                <a href="index.html#monthlyReports">الحسابات والتقارير الشهريه</a>
+                                                <a href="index.html#rent"> قسم التأجير </a>
+                                                <a href="index.html#development">قسم التطوير </a>
+                                                <a href="index.html#contracts">قسم تجديد وإصدار العقود</a>
+                                                <a href="index.html#maintance">إدارة الصيانه</a>
                                                 
                                             </div>
                                         </div>
@@ -175,16 +178,24 @@
                   <form id="request" class="main_form">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="الاسم الكامل" type="type" name="Full Name"> 
+                           <input class="contactus" placeholder="الاسم الكامل" type="text" name="Full Name"
+                           onfocus="this.placeholder=''" 
+                           onblur="this.placeholder='الاسم الكامل'"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="رقم الهاتف" type="type" name="Phone Number"> 
+                           <input class="contactus" placeholder="رقم الهاتف" type="tel" name="Phone Number"
+                           onfocus="this.placeholder=''" 
+                           onblur="this.placeholder='رقم الهاتف '"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="البريد الالكتروني" type="type" name="Email">                          
+                           <input class="contactus" placeholder="البريد الالكتروني" type="email" name="Email"
+                           onfocus="this.placeholder=''" 
+                           onblur="this.placeholder='البريد الإلكتروني'" >                          
                         </div>
                         <div class="col-md-12">
-                           <textarea class="contactus" placeholder="ملاحظات" type="type" Message="Name">ملاحظات </textarea>
+                           <textarea class="contactus" placeholder="ملاحظات" type="text" Message="Name"
+                           onfocus="this.placeholder=''" 
+                           onblur="this.placeholder='أي ملاحظات'">أي ملاحظات </textarea>
                         </div>
                         <div class="col-sm-12">
                            <button class="send_btn">أرسال</button>
