@@ -366,7 +366,8 @@ button {
   background-color: #f9f9f9;
   min-width: 160px;
   z-index: 1;
-  position: relative;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown .dropdown-content a {
@@ -389,26 +390,14 @@ button {
 }
 
 .dropdown:hover .dropdown-content {
-  display: inline-block;
+  display: block;
+  position: fixed;
 }
 
 .dropdown .maintenance:hover {
   color: #000;
 }
 
-.sign_btn a {
-  background-color: #fff;
-  display: inline-block;
-  padding: 7px 35px;
-  border-radius: 20px;
-  color: #292e39;
-  font-size: 17px;
-}
-
-.sign_btn a:hover {
-  color: #fff;
-  background: #000;
-}
 .secondNav {
   justify-content: flex-end;
 }
