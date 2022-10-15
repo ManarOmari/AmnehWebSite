@@ -631,7 +631,6 @@ hr {
 
 .orderList li{
 list-style-type: decimal;
-margin-top: 0.6rem;
 }
 
 .serviceP {
@@ -641,10 +640,11 @@ margin-top: 0.6rem;
 .see_more_btn .see_more {
   padding: 15px;
   background: none;
-  border: 1px solid #00aeef;
+  border: 5px solid #00aeef;
   border-radius: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 900;
+  width: 11vw;
+  font-size: 18px;
 }
 
 .see_more_btn .see_more:hover {
