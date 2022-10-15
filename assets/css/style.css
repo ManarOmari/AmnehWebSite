@@ -29,6 +29,7 @@
 
 * {
   box-sizing: border-box !important;
+  font-family: 'El Messiri', sans-serif;
 }
 
 html {
@@ -118,8 +119,7 @@ button:focus {
 }
 
 ul,
-li,
-ol {
+li {
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -366,7 +366,8 @@ button {
   background-color: #f9f9f9;
   min-width: 160px;
   z-index: 1;
-  position: relative;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown .dropdown-content a {
@@ -389,26 +390,14 @@ button {
 }
 
 .dropdown:hover .dropdown-content {
-  display: inline-block;
+  display: block;
+  position: fixed;
 }
 
 .dropdown .maintenance:hover {
   color: #000;
 }
 
-.sign_btn a {
-  background-color: #fff;
-  display: inline-block;
-  padding: 7px 35px;
-  border-radius: 20px;
-  color: #292e39;
-  font-size: 17px;
-}
-
-.sign_btn a:hover {
-  color: #fff;
-  background: #000;
-}
 .secondNav {
   justify-content: flex-end;
 }
@@ -629,13 +618,22 @@ hr {
   margin-top: 2rem;
 }
 
+.orderList li{
+list-style-type: decimal;
+}
+
+.serviceP {
+  text-align: justify;
+}
+
 .see_more_btn .see_more {
   padding: 15px;
   background: none;
-  border: 1px solid #00aeef;
+  border: 5px solid #00aeef;
   border-radius: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 900;
+  width: 11vw;
+  font-size: 18px;
 }
 
 .see_more_btn .see_more:hover {
@@ -692,63 +690,13 @@ hr {
 
 /** mobile section **/
 
-/** clients section **/
-
-.clients {
-  margin-top: 40px;
-  padding-top: 60px;
+/** about section **/
+#aboutTitlePage {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
 }
 
-.clients .titlepage h2 {
-  color: #202021;
-}
-
-.clients .titlepage span {
-  margin-left: 56px;
-}
-
-.clients_box {
-  text-align: center;
-  background: #e2e3e3;
-  padding: 50px 15px;
-  border-radius: 15px;
-  position: relative;
-}
-
-.clients_box p {
-  font-size: 17px;
-  line-height: 35px;
-}
-
-.clients_box::after {
-  position: absolute;
-  content: "";
-  width: 42px;
-  height: 67px;
-  bottom: -65px;
-  background: url(../imgs/cli_cross.png);
-  background-repeat: no-repeat;
-}
-
-.jonu {
-  padding-top: 72px;
-  text-align: center;
-}
-
-.jonu h3 {
-  padding: 0px 0px 0px 0px;
-  color: #0b0503;
-  font-size: 25px;
-}
-
-.jonu strong {
-  display: block;
-  color: #00aeef;
-  font-size: 17px;
-  padding-bottom: 50px;
-}
-
-/** end clients section **/
+/** end about section **/
 
 /** contact section **/
 
@@ -877,10 +825,11 @@ ul.cont li {
 .copyright a:hover {
   color: #000;
 }
+
 .about_img figure img{
-  border-radius: 100px;
-  width: 75%;
-  margin-top: 4em;
+  border-radius: 24px;
+    width: 100%;
+    margin-top: 7em;
 
 }
 
@@ -917,27 +866,22 @@ ul.cont li {
 }
 
 .arabicText {
-  margin-top: 20px;
-  margin-bottom: 20px
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.arabicText p {
-  direction: rtl;
-  text-align: justify;
-}
-
-.englishText {
-  margin-bottom: 20px
-}
-.englishText p {
+.englishText p , .arabicText p {
   direction: ltr;
   text-align: justify;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
   .hideFromDesktop {
     display: inline-block;
   }
+
   .hideFromMobile {
     display: none;
   }
