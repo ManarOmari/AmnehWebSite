@@ -29,6 +29,7 @@
 
 * {
   box-sizing: border-box !important;
+  font-family: 'El Messiri', sans-serif;
 }
 
 html {
@@ -118,8 +119,7 @@ button:focus {
 }
 
 ul,
-li,
-ol {
+li {
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -627,6 +627,15 @@ hr {
 
 .service .row {
   margin-top: 2rem;
+}
+
+.orderList li{
+list-style-type: decimal;
+margin-top: 0.6rem;
+}
+
+.serviceP {
+  text-align: justify;
 }
 
 .see_more_btn .see_more {
