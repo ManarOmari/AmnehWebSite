@@ -690,63 +690,13 @@ list-style-type: decimal;
 
 /** mobile section **/
 
-/** clients section **/
-
-.clients {
-  margin-top: 40px;
-  padding-top: 60px;
+/** about section **/
+#aboutTitlePage {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
 }
 
-.clients .titlepage h2 {
-  color: #202021;
-}
-
-.clients .titlepage span {
-  margin-left: 56px;
-}
-
-.clients_box {
-  text-align: center;
-  background: #e2e3e3;
-  padding: 50px 15px;
-  border-radius: 15px;
-  position: relative;
-}
-
-.clients_box p {
-  font-size: 17px;
-  line-height: 35px;
-}
-
-.clients_box::after {
-  position: absolute;
-  content: "";
-  width: 42px;
-  height: 67px;
-  bottom: -65px;
-  background: url(../imgs/cli_cross.png);
-  background-repeat: no-repeat;
-}
-
-.jonu {
-  padding-top: 72px;
-  text-align: center;
-}
-
-.jonu h3 {
-  padding: 0px 0px 0px 0px;
-  color: #0b0503;
-  font-size: 25px;
-}
-
-.jonu strong {
-  display: block;
-  color: #00aeef;
-  font-size: 17px;
-  padding-bottom: 50px;
-}
-
-/** end clients section **/
+/** end about section **/
 
 /** contact section **/
 
@@ -875,10 +825,11 @@ ul.cont li {
 .copyright a:hover {
   color: #000;
 }
+
 .about_img figure img{
-  border-radius: 100px;
-  width: 75%;
-  margin-top: 4em;
+  border-radius: 24px;
+    width: 100%;
+    margin-top: 7em;
 
 }
 
@@ -915,27 +866,22 @@ ul.cont li {
 }
 
 .arabicText {
-  margin-top: 20px;
-  margin-bottom: 20px
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.arabicText p {
-  direction: rtl;
-  text-align: justify;
-}
-
-.englishText {
-  margin-bottom: 20px
-}
-.englishText p {
+.englishText p , .arabicText p {
   direction: ltr;
   text-align: justify;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
   .hideFromDesktop {
     display: inline-block;
   }
+
   .hideFromMobile {
     display: none;
   }
