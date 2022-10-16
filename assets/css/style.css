@@ -26,10 +26,63 @@
 @import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+  .hideFromDesktop {
+    display: none;
+  }
+
+  .hideFromMobile {
+    display: inline-block;
+  }
+
+  .topnav {
+    font-size: 10px;
+  }
+
+  .list1 {
+    width: 100%;
+    align-items: flex-end;
+    direction: rtl;
+    height: 35px;
+  }
+
+  .list1 li:first-child {
+    display: none;
+  }
+
+  .secondNav {
+    display: none;
+  }
+
+  .logo a img {
+    max-width: 33%;
+    height: auto;
+    margin-left: 0%;
+  }
+
+  .feature-icon {
+    position: initial;
+  }
+
+  #paragraph {
+    height: 14vh;
+  }
+  .see_more_btn {
+    margin-left: 30vw;
+  }
+
+  .see_more_btn .see_more {
+    width: 30vw;
+    text-align: center;
+  }
+  #aboutTitlePage {
+    margin-bottom: 0;
+  }
+}
 
 * {
   box-sizing: border-box !important;
-  font-family: 'El Messiri', sans-serif;
+  font-family: "El Messiri", sans-serif;
 }
 
 html {
@@ -367,7 +420,7 @@ button {
   min-width: 160px;
   z-index: 1;
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown .dropdown-content a {
@@ -618,8 +671,8 @@ hr {
   margin-top: 2rem;
 }
 
-.orderList li{
-list-style-type: decimal;
+.orderList li {
+  list-style-type: decimal;
 }
 
 .serviceP {
@@ -632,7 +685,7 @@ list-style-type: decimal;
   border: 5px solid #00aeef;
   border-radius: 30px;
   font-weight: 900;
-  width: 11vw;
+  width: auto;
   font-size: 18px;
 }
 
@@ -826,11 +879,10 @@ ul.cont li {
   color: #000;
 }
 
-.about_img figure img{
+.about_img figure img {
   border-radius: 24px;
-    width: 100%;
-    margin-top: 7em;
-
+  width: 100%;
+  margin-top: 7em;
 }
 
 /** end footer **/
@@ -858,11 +910,11 @@ ul.cont li {
 }
 
 .hideFromDesktop {
-  display: none;
+  display: inline-block;
 }
 
 .hideFromMobile {
-  display: inline-block;
+  display: none;
 }
 
 .arabicText {
@@ -870,52 +922,10 @@ ul.cont li {
   margin-bottom: 3rem;
 }
 
-.englishText p , .arabicText p {
+.englishText p,
+.arabicText p {
   direction: ltr;
   text-align: justify;
   font-size: 17px;
   font-weight: 700;
-}
-
-@media only screen and (max-width: 600px) {
-  .hideFromDesktop {
-    display: inline-block;
-  }
-
-  .hideFromMobile {
-    display: none;
-  }
-
-  .topnav {
-    font-size: 10px;
-  }
-
-  .list1 {
-    width: 100%;
-    align-items: flex-end;
-    direction: rtl;
-    height: 35px;
-  }
-
-  .list1 li:first-child {
-    display: none;
-  }
-
-  .secondNav {
-    display: none;
-  }
-
-  .logo a img {
-    max-width: 33%;
-    height: auto;
-    margin-left: 0%;
-  }
-
-  .feature-icon {
-    position: initial;
-  }
-
-  #paragraph {
-    height: 14vh;
-}
 }
