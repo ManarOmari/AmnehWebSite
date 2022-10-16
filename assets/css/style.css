@@ -78,6 +78,16 @@
   #aboutTitlePage {
     margin-bottom: 0;
   }
+  .navigation .navbar-collapse {
+    background: #00aeefe3;
+    padding: 20px;
+    margin-top: 37px;
+    position: absolute;
+    width: 100%;
+    margin-left: 20px;
+    height: 100vh;
+    z-index: 999;
+}
 }
 
 * {
